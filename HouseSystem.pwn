@@ -195,7 +195,7 @@ timer SaveHouse[60*1000](playerid){
 			INI_SetTag(ini, "Core");
 			INI_WriteString(ini, "Owner", gHouse[house][Owner]);
 			INI_WriteInt(ini, "Locked", gHouse[house][Locked]);
-			INI_WriteInt(ini, "Time", gHouse[house][Time]);
+			INI_WriteInt(ini, "Time", gettime());
 			INI_Close(ini);
 		}
 	}
